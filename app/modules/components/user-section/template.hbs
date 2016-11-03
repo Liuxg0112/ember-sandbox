@@ -1,0 +1,7 @@
+<section class="card">
+    {{user-section/header tagName='' selectedUser=selectedUser}}
+    <div class="grid">
+        {{user-section/list tagName='' users=users selectedUser=selectedUser selectUser=(action "selectUser") clearUser=(action "clearUser")}}
+        {{user-section/detail tagName='' selectedUser=selectedUser}}
+    </div>
+</section>

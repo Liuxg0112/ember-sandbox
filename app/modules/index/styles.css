@@ -1,23 +1,5 @@
 @value ui-gray from "ui-colors";
 
-:global(.standard) .user-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-:global(.standard) .user-item {
-  cursor: pointer;
-  padding: .75rem 1rem;
-  transform: translateZ(0);
-  transition: all .3s ease-in-back;
-
-  &:hover, &:focus {
-    background-color: color(ui-gray a(16%));
-    text-indent: 1rem;
-  }
-}
-
 :global(.intrinsic) {
   display: block;
 
