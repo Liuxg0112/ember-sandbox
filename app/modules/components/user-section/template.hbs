@@ -1,7 +1,14 @@
-{{yield (hash
+{{yield
+  (hash
+  header=(component 'user-section/header')
+  list=(component 'user-section/list')
+  detail=(component 'user-section/detail')
+  )
+  (hash
   m_users=users
   m_selectedUser=selectedUser
 
   fn_selectUser=(action 'selectUser')
   fn_clearUser=(action 'clearUser')
-)}}
+  )
+}}
