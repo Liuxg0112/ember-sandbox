@@ -1,3 +1,9 @@
+{{#user-section model as |api|}}
+    {{user-section/header api.m_selectedUser}}
+    <div class="grid">
+        {{user-section/list api.m_selectedUser api.m_users}}
+    </div>
+{{/user-section}}
 <h2>在父子组件之间传递状态</h2>
 
 <section class="card">{{!-- 1 --}}
